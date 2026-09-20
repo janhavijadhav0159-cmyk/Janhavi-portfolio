@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Janhavi Jadhav portfolio recreation in plain HTML, CSS and JavaScript." />
+  <title>Janhavi Jadhav</title>
+  <link rel="icon" href="assets/images/sb-mark.jpg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="resume1.html">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" style="width:0%"></div>
+
+  <!-- Mobile sidebar -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Mobile navigation">
+    <div class="sidebar-header flex justify-between items-center">
+      <div class="sidebar-logo flex items-center gap-2">
+        <img src="assets/images/sb-mark.jpg" alt="Logo" class="logo-section" />
+        <span>Janhavi</span>
+      </div>
+
+      <button class="hamburger active" id="sidebarClose" aria-label="Close navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a class="sidebar-link active" href="#home">Home</a></li>
+      <li><a class="sidebar-link" href="#about">About</a></li>
+      <li><a class="sidebar-link" href="#skills">Skills</a></li>
+      <li><a class="sidebar-link" href="#badges">Certificates</a></li>
+      <li><a class="sidebar-link" href="#projects">Projects</a></li>
+      <li><a class="sidebar-link" href="#contact">Contact</a></li>
+      <li><a class="nav-link" href="resume1.html">Resume</a></li>
+    </ul>
+  </aside>
+
+  <!-- Desktop / mobile top navigation -->
+  <nav>
+    <div class="nav-contains">
+      <div class="nav-container">
+        <div class="logo flex items-center gap-2 max-w-6xl">
+          <a href="#home" aria-label="Go home">
+            <img src="assets/images/sb-mark.jpg" alt="Logo" class="logo-section" />
+          </a>
+          <span>Janhavi</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#badges">Certificates</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="Resume1.html">Resume</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+
+      <div class="hero-content">
+        <h1>Janhavi Jadhav</h1>
+        <p>Web Developer|Designer|Programmer</p>
+        <a href="#about" class="cta-button">Root access to my work</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am Janhavi, I am a passionate Web Developer, Designer, and Programmer with a strong interest 
+            in creating attractive, user-friendly, and responsive websites.
+            I enjoy learning new technologies and building projects that solve real problems.
+          </p>
+          <p>
+             
+            I have basic knowledge of HTML, CSS, JavaScript, Java, Python, and C++. I enjoy designing creative web pages and developing useful applications.
+             I am always interested in learning new technologies, improving my programming skills, and building innovative projects.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <div class="profile-placeholder">
+            <!-- The source application currently supplies an empty image src here. -->
+            <span>Nameless monster</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- BADGES -->
+    <section id="badges" class="badges-section">
+      <div class="badges-container">
+        <div class="section-header">
+          <div class="section-header-left">
+           <h2 class="section-title">Professional Badges &amp; Certifications</h2>
+            <p class="section-subtitle">Recognized achievements and validated expertise</p>
+          </div>
+       
+          <div class="total-badges" aria-hidden="false">
+            <span class="total-label">Total Badges: <span id="totalBadgeCount">7</span></span>
+          </div>
+        </div>
+ 
+
+        <div class="badge-filters" id="badgeFilters"></div>
+        <div class="badges-grid" id="badgesGrid"></div>
+        <div class="no-badges" id="noBadges" hidden>
+          <p>No badges found in this category</p>
+        </div>
+      </div>
+    </section>
+
+    <!--PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="projects-container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="flex flex-col items-center">
+        <a href="#home" aria-label="Back to home">
+          <img
+            src="assets/images/sb-mark.jpg"
+            alt="Logo"
+            class="logo-img"
+            onerror="this.onerror=null;this.src='assets/images/sb-mark.svg';"
+          />
+        </a>
+        <h2 class="section-title">Join Networks</h2>
+      </div>
+
+      <p class="contact-description">"Let's innovate together and build groundbreaking tech solutions."</p>
+
+      <div class="social-links">
+        <a href="https://github.com/janhavi-jadhav" class="social-link github" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/janhavi-jadhav-4122003-artificialintelligence/" class="social-link linkedin" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <a href="https://stackoverflow.com/users/13561032/janhavi-jadhav" class="social-link stackoverflow" target="_blank" rel="noopener noreferrer" title="Stack Overflow" aria-label="Stack Overflow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/>
+          </svg>
+        </a>
+
+        <a href="https://x.com/janhavi_jadhav0159" class="social-link twitter" target="_blank" rel="noopener noreferrer" title="X" aria-label="X">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

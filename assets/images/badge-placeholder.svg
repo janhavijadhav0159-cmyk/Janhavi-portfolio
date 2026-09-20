@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+<circle cx="250" cy="250" r="205" fill="#1a1a1a"/>
+<circle cx="250" cy="250" r="165" fill="#f5f5f5"/>
+<text x="250" y="235" text-anchor="middle" font-family="Arial" font-size="72" font-weight="700" fill="#1a1a1a">AWS</text>
+<text x="250" y="300" text-anchor="middle" font-family="Arial" font-size="30" fill="#555">BADGE</text>
+</svg>

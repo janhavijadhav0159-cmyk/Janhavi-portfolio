@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#1a1a1a"/><stop offset="1" stop-color="#555"/></linearGradient></defs>
+<rect width="1200" height="700" fill="url(#g)"/>
+<text x="600" y="330" text-anchor="middle" font-family="Arial" font-size="64" fill="white">PROJECT PREVIEW</text>
+<text x="600" y="395" text-anchor="middle" font-family="Arial" font-size="28" fill="silver">Original hosted image unavailable</text>
+</svg>
