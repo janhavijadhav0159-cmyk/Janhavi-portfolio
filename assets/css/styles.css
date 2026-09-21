@@ -341,6 +341,18 @@ nav {
     transition: all .3s ease
 }
     */
+    .abc{
+        width: 300px;
+        height: 400px;
+        border-radius: 90%;
+        border: 3px solid black;
+        object-fit: cover;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: all .3s ease
+    }
 
 .profile-placeholder:hover {
     transform: scale(1.1) rotate(5deg);
