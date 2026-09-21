@@ -328,9 +328,9 @@ nav {
 
 .profile-placeholder {
     width: 300px;
-    height: 300px;
+    height: 400px;
     background: linear-gradient(135deg,#1a1a1a,#333);
-    border-radius: 50%;
+    border-radius: 5%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1434,11 +1434,12 @@ nav {
         padding: 0
     }
 
-    html,: host {
+    html, :host {
         -webkit-text-size-adjust:100%;
         tab-size: 4;
         line-height: 1.5;
-        font-family: var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji");
+        font-family: var(--default-font-family,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",
+        "Segoe UI Symbol","Noto Color Emoji");
         font-feature-settings: var(--default-font-feature-settings,normal);
         font-variation-settings: var(--default-font-variation-settings,normal);
         -webkit-tap-highlight-color: transparent
@@ -1450,7 +1451,7 @@ nav {
         border-top-width: 1px
     }
 
-    abbr: where([title]) {
+    abbr:where([title]) {
         -webkit-text-decoration:underline dotted;
         text-decoration: underline dotted
     }
@@ -1520,7 +1521,7 @@ nav {
 
     img,svg,video,canvas,audio,iframe,embed,object {
         vertical-align: middle;
-        display: block
+        display: block;
     }
 
     img,video {
@@ -1550,11 +1551,11 @@ nav {
         border-radius: 0
     }
 
-    :where(select: is([multiple],[size])) optgroup {
+    :where(select:is([multiple],[size])) optgroup {
         font-weight:bolder
     }
 
-    :where(select: is([multiple],[size])) optgroup option {
+    :where(select:is([multiple],[size])) optgroup option {
         padding-inline-start:20px
     }
 
@@ -1629,7 +1630,7 @@ nav {
         box-shadow: none
     }
 
-    button,input: where([type=button],[type=reset],[type=submit]) {
+    button,input:where([type=button],[type=reset],[type=submit]) {
         appearance:button
     }
 
@@ -1645,7 +1646,7 @@ nav {
         height: auto
     }
 
-    [hidden]: where(:not([hidden=until-found])) {
+    [hidden]:where(:not([hidden=until-found])) {
         display:none!important
     }
 }
