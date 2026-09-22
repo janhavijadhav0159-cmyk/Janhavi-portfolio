@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const ORIGINAL_ASSET_BASE = "https://sujal-bedre.vercel.app/assets/";
+  const ORIGINAL_ASSET_BASE = "janhavi-portfolio-iknq.vercel.app/assets/images/";
 
   const skills = [
     {
@@ -12,6 +12,7 @@
       title: "Problem Solving",
       description: "Problem solving is the ability to identify a problem and find an effective solution.It helps programmers analyze errors and create logical solutions using code."
     },
+
     {
       title: "Responsive web design",
       description: "Responsive web design creates websites that adjust automatically to different screen sizes.It makes websites user-friendly on mobile, tablet, and desktop devices."
@@ -54,22 +55,25 @@
   const projects = [
    {
       id: 1,
-     title: "Smart DeFi Router Agents",
-      description: "An AI-powered DeFi application that automates optimal trade routing across multiple decentralized exchanges using intelligent agents.",
-      image: "Smart-defi-router-DK8_fFkE.png",
-      technologies: ["React", "Node.js", "MongoDB", "ExpressJs", "Python", "REST API", "Blockchain"],
-      projectLink: "https://smart-de-fi-router-agents.vercel.app/",
-      codeLink: "https://github.com/SujalBedre4/Smart-DeFi-Router-Agents"
-    },
-    {
-     id: 2,
       title: "Portfolio Website",
       description: "A responsive portfolio website showcasing modern design principles with smooth animations and optimal performance.",
       image: "Portfolio-CDjlsqTs.png",
-      technologies: ["React", "CSS3", "JavaScript", "Responsive Design", "TailwindCSS"],
-      projectLink: "./",
-      codeLink: "./"
+      technologies: ["HTML", "CSS", "JavaScript"],
+      projectLink: "https://janhavi-jadhav.vercel.app/",
+      codeLink: "https://github.com/janhavijadhav0159-cmyk/Janhavi-portfolio.git"
     },
+    {
+      id: 2,
+       title: "Job Portal",
+      description: "A job portal is web-based application that helps job seefind and apply for job online. Employers can post job vacancies and view applications from candidates. It makes the recruitment process faster, easier, and more convenient.",     image: "Smart-defi-router-DK8_fFkE.png",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      /*
+      projectLink: "janhavi-portfolio-iknq.vercel.app",  
+      codeLink: "https://github.com/janhavijadhav0159-cmyk/Janhavi-portfolio.git"
+      */
+    
+    },
+    /*
     {
      id: 3,
       title: "Marc_0.2 (Under Development)",
@@ -79,6 +83,7 @@
       projectLink: "#",
       codeLink: "#"
     }
+      */
  ];
  
   const progressBar = document.getElementById("progressBar");
